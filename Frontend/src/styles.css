@@ -1,0 +1,14 @@
+
+/* $desktop:1200px;
+$laptop:992px;
+$tab: 768px;
+phone:480px; */
+
+body{
+
+    @media screen and (min-width: 768px) and  (max-width: 1200px)
+    {
+        background: white;
+        
+    }
+}

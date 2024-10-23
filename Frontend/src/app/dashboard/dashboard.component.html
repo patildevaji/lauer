@@ -1,0 +1,32 @@
+<div class="dashboard">
+    
+    <div class="col">
+        <div class="left" style="padding: 2% ; border: none; border-radius: 4px; ">
+            <button><a class=""  (click)='showHideA()'>Profile</a> </button>
+            
+            <button><a class=""  (click)='showHideB()'>Change password</a></button>
+            
+            <button><a class="" (click)='showHideC()'>Open Applications</a></button>
+            <button><a class="" (click)='showHideD()'>Applied Applications</a></button>
+            <!-- <button class="signout-button" (click)="handleSignOut()">Sign Out</button> -->
+
+        </div>
+        
+        
+    </div>
+    <div id='visibleProfile' *ngIf="myVarA">
+        <app-profile></app-profile>
+    </div>
+    
+    <div id='visibleUpdate' *ngIf="myVarB">
+        <app-update></app-update>
+    </div>
+
+    <div id='visibleOA' *ngIf="myVarC">
+        <app-open-app></app-open-app>
+    </div>
+
+    <div id='visibleAA' *ngIf="myVarD">
+        <app-applied-applications></app-applied-applications>
+    </div>
+</div>

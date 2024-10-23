@@ -1,0 +1,31 @@
+h2{
+    text-align: left;
+}
+h5{
+    text-align: center;
+    
+}
+
+.form-container {
+    border-spacing: 1em;
+    margin: 1%;
+    padding: 1%;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input {
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

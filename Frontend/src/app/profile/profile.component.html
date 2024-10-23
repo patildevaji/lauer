@@ -1,0 +1,100 @@
+<h2> Contact Information </h2>
+
+
+<form (ngSubmit)="submitForm()">
+  <div class="form-container">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="firstname">First name:</label>
+        <input *ngIf="isEditMode" type="text" id="firstname" placeholder="First name" class="input" name="firstname" [(ngModel)]="formData.firstname" required>
+        <span *ngIf="!isEditMode">{{ formData.firstname }}</span>
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last name:</label>
+        <input *ngIf="isEditMode" type="text" id="lastname" placeholder="Last name" class="input" name="lastname" [(ngModel)]="formData.lastname" required>
+        <span *ngIf="!isEditMode">{{ formData.lastname }}</span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input *ngIf="isEditMode" type="text" id="email" placeholder="Email" class="input" name="email" [(ngModel)]="formData.email" required>
+        <span *ngIf="!isEditMode">{{ formData.email }}</span>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input *ngIf="isEditMode" type="text" id="phone" placeholder="Phone Number" class="input" name="phone" [(ngModel)]="formData.phone" required>
+        <span *ngIf="!isEditMode">{{ formData.phone }}</span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input *ngIf="isEditMode" type="text" id="country" placeholder="Country" class="input" name="country" [(ngModel)]="formData.country" required>
+        <span *ngIf="!isEditMode">{{ formData.country }}</span>
+      </div>
+      <div class="form-group">
+        <label for="address">Street Address:</label>
+        <input *ngIf="isEditMode" type="text" id="address" placeholder="Address" class="input" name="address" [(ngModel)]="formData.address" required>
+        <span *ngIf="!isEditMode">{{ formData.address }}</span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input *ngIf="isEditMode" type="text" id="city" placeholder="City" class="input" name="city" [(ngModel)]="formData.city" required>
+        <span *ngIf="!isEditMode">{{ formData.city }}</span>
+      </div>
+      <div class="form-group">
+        <label for="plz">ZIP/Postal code:</label>
+        <input *ngIf="isEditMode" type="text" id="plz" placeholder="ZIP" class="input" name="plz" [(ngModel)]="formData.plz" required>
+        <span *ngIf="!isEditMode">{{ formData.plz }}</span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="city">LinkedIn:</label>
+        <input *ngIf="isEditMode" type="text" id="linkedin" placeholder="LinkedIn" class="input" name="Linkedin" [(ngModel)]="formData.linkedin" required>
+        <span *ngIf="!isEditMode">{{ formData.linkedin }}</span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+          <label for="image">Image:</label>
+          <input *ngIf="isEditMode" type="file" id="image" name="image" accept="image/*" (change)="onFileChange($event)">
+          <span *ngIf="!isEditMode"> <!-- Display image preview if in non-edit mode -->
+              <img *ngIf="formData.image" [src]="formData.image" alt="Uploaded Image" width="100">
+              <span *ngIf="!formData.image">No image uploaded</span>
+          </span>
+      </div>
+  </div>
+
+
+    <button type="button" (click)="handleButtonClick()" class="button">{{ isEditMode ? 'Save' : 'Edit' }}</button>
+  </div>
+</form>
+<!-- <div class="profile-section">
+    <h2>Resume / LinkedIn Profile</h2>
+    <div class="form-row">
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" class="file-upload" onchange="console.log(event.target.files)">
+    </div>
+    <div class="form-row">
+        <label for="additional-docs">Additional Documents:</label>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" id="additional-docs">
+            (change)="uploadFile($event)
+            <br><br>
+            <button class="upload-btn">Upload</button>
+        </form>
+    </div>
+    <div class="form-row">
+        <label for="linkedin-profile">LinkedIn Profile:</label>
+        <input type="text" id="linkedin-profile" placeholder="Enter URL" class="input">
+        <button type="submit" class="apply-btn">Apply Changes</button>
+    </div>
+</div> -->
+

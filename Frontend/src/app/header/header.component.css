@@ -1,0 +1,98 @@
+.header {
+  height: 12%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(30, 31, 34);
+  box-shadow: 5px 5px 5px rgb(63, 133, 231);
+  padding: 0%;
+  @media (max-width: 992px) {
+    display: block;
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    display: block;
+    font-size: 20px;
+  }
+}
+.navbar {
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  text-shadow: 1px 1px 1px teal;
+}
+
+.nav_list {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+.list{
+    
+    display: inline;
+    vertical-align: top;
+    margin: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.list a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #93c4da;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+.btn-outline-success{
+  color: #93c4da;
+  border: 1px solid rgb(255, 255, 255);
+  height: 39px;
+}
+
+.list a:hover, .btn-outline-success {
+  color: #ffffff;
+}
+
+
+.title{
+  
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 2px;
+  
+}
+
+ 
+
+
+.logo {
+    height: 5%;
+    width:  5%;
+    margin-left: 0px;
+}
+
+.px-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+.fa-home, .fa-sign-in, .fa-search, .fa-user{
+  padding: 10px 2px;
+  color: rgb(255, 255, 255);
+}
+
+#visibleButtonOut{
+  display: block;  
+}
+
+#visibleButtonIN{
+  display: block;  
+}

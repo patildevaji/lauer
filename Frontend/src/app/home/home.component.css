@@ -1,0 +1,120 @@
+.page{
+  
+  background: linear-gradient(65deg, #e3e5ea 0%, #e0e4e6 30%);
+  overflow: hidden;
+  top: 0;
+ 
+  display: block;
+  
+  /* height:  1000px ; */
+}
+
+.home{
+  background: url(../../assets/bg2.jpg);
+  
+  background-size: cover;
+  
+  padding-bottom: 30rem;
+  
+
+} 
+
+.container{
+  align-items: center;
+  
+}
+.home-heading {
+  text-align: center;
+  
+  font-size: 4rem;
+  
+}
+
+.openings{
+  padding-bottom: 50px;
+  /* position: absolute; */
+}
+
+.nav_list {
+  padding: 0%;
+  padding-left: 30%;
+
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.btn-outline-success
+{
+  background-color: rgb(10, 137, 241);
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  width: 8em;
+  cursor: pointer;
+
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+h5 {
+  margin: 0;
+}
+
+button.apply {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.apply:hover {
+  background-color: #45a049;
+}
+
+.description-cell {
+  max-width: 200px;
+  /* Adjust as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+.description-cell:hover::after {
+  content: attr(data-description);
+  white-space: normal;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: auto;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+}

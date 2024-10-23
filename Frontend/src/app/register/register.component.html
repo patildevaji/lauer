@@ -1,0 +1,56 @@
+<section class="register">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+  <div class="form register">
+    <div class="form-content">
+      <header>Register</header>
+      <form>
+        <div class="field input-field">
+          <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder="Email"
+            class="input">
+        </div>
+
+        <div class="field input-field">
+          <input type="username" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" placeholder="Username"
+            class="input">
+        </div>
+
+        <div class="field input-field">
+          <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"
+            placeholder="Create password" class="password">
+        </div>
+
+        <div class="field input-field">
+          <input type="password" [(ngModel)]="cpassword" [ngModelOptions]="{standalone: true}"
+            placeholder="Verify password" class="password">
+        </div>
+
+        <div class="field button-field">
+          <button type="submit" (click)="save()">Register</button>
+        </div>
+      </form>
+
+      <div class="form-link">
+        <button>Already have an account? <a routerLink="login" (click)="handleSignOut()">Login</a></button>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="media-options">
+      <a href="#" class="field facebook">
+        
+        <span>Login with LinkedIn</span>
+      </a>
+    </div>
+
+    <div class="media-options">
+      <a href="#" class="field google">
+        
+        <span>Login with Google</span>
+      </a>
+    </div>
+
+  </div>
+</section>

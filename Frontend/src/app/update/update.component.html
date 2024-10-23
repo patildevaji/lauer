@@ -1,0 +1,46 @@
+<h2>Update Password</h2>
+
+<form (ngSubmit)="submitForm()">
+    <td style="border-spacing: 1em; margin: 1%; padding: 1%;">
+        <tr style="border-spacing: 1em;">
+            <td>
+                <h5 style="display: inline; margin: 1%;">Email</h5>
+            </td>
+            <td>
+                <input style="display: inline;" type="text" placeholder="Email" class="input" name="email"
+                     [(ngModel)]="formData.email" required>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <h5 style="display: inline; margin: 1%;">Enter Old Password</h5>
+            </td>
+            <td>
+                <input style="display: inline;" type="password" placeholder="Enter Old Password" class="input" name="oldPassword" [(ngModel)]="formData.oldPassword"
+                     required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5 style="display: inline; margin: 1%; ">Enter New Password </h5>
+            </td>
+            <td>
+                <input type="password" placeholder="Enter New Password" class="input" name="newPassowrd" [(ngModel)]="formData.newPassword" required>
+            </td>
+        </tr>
+
+        <tr style="border-spacing: 1em;">
+            <td>
+                <h5 style="display: inline; margin: 1%;">Confirm New Password </h5>
+            </td>
+            <td><input style="display: inline;" type="password" placeholder="Confirm new Password" class="input" name="confirmNewPassword"
+                [(ngModel)]="formData.confirmNewPassword" required>
+            </td>
+        </tr>
+        <tr>
+    <td>
+        <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+    </td>
+
+</form>
